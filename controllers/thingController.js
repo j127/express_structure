@@ -17,7 +17,7 @@ function list(req, res, next) {
 }
 
 function detail(req, res, next) {
-    const thingId = req.params?.id;
+    const thingId = req.params.id;
     axios
         .get(API_BASE_URL + "/api/" + thingId)
         .then(response => {
