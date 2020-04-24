@@ -27,3 +27,7 @@ table td, table th {
     padding: 5px 9px;
     border: 1px #aaa solid;
 }
+
+span.color {
+    text-shadow: 1px 1px #000;
+}
