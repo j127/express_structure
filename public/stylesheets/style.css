@@ -14,3 +14,7 @@ code {
     outline: 1px dashed #666;
     padding: 4px;
 }
+
+img {
+    border-radius: 5px;
+}

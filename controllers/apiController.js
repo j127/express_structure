@@ -1,17 +1,18 @@
 const faker = require("faker");
-const { sample } = require("lodash");
+const { random } = require("lodash");
 
 // Make a fake API
 const NUM_THINGS = 20;
 const things = [];
-const pictureTypes = [
-    "abstract",
-    "animals",
-    "business",
-    "cats",
-    "food",
-    "transport",
-];
+// These take too long to load
+// const pictureTypes = [
+//     "abstract",
+//     "animals",
+//     "business",
+//     "cats",
+//     "food",
+//     "transport",
+// ];
 for (let i = 0; i < NUM_THINGS; i++) {
     const newThing = {
         id: i + 1,
@@ -19,7 +20,8 @@ for (let i = 0; i < NUM_THINGS; i++) {
         product: faker.fake("{{commerce.product}}"),
         price: faker.fake("{{commerce.price}}"),
         description: faker.fake("{{hacker.phrase}}"),
-        picture: faker.fake(`{{image.${sample(pictureTypes)}}}`),
+        // picture: faker.fake(`{{image.${sample(pictureTypes)}}}`),
+        picture: `https://placekitten.com/${random(190, 300)}/${190, 300}`,
     };
     things.push(newThing);
 }
