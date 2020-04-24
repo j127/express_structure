@@ -18,3 +18,12 @@ code {
 img {
     border-radius: 5px;
 }
+
+table {
+    margin-top: 11px;
+    border-collapse: collapse;
+}
+table td, table th {
+    padding: 5px 9px;
+    border: 1px #aaa solid;
+}
