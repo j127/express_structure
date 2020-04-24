@@ -1,9 +1,11 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const ctrl = require("../controllers/pageController");
 
-/* GET home page. */
-router.get("/", function (req, res, next) {
-    res.render("index", { title: "Express" });
-});
+const router = express.Router();
+
+// The runs the code stored in `controllers/pageController.js`
+router.get("/", ctrl.homePage);
+router.get("/about", ctrl.aboutPage);
+router.get("/contact", ctrl.contactPage);
 
 module.exports = router;
