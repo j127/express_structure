@@ -1,8 +1,16 @@
 body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 17px 67px;
+    max-width: 800px;
+    font-family: monospace;
 }
 
-a {
-    color: #00b7ff;
+.logo {
+    font-size: 2em;
+}
+
+code {
+    color: #555;
+    text-transform: uppercase;
+    outline: 1px dashed #666;
+    padding: 4px;
 }

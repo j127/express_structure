@@ -9,8 +9,9 @@ function list(req, res, next) {
     axios
         .get(API_BASE_URL + "/api")
         .then(response => {
-            console.log(response.data)
-            res.render("things", response.data);
+            console.log(response.data);
+            const things = response.data;
+            res.render("things", { title: "Things List", things: things });
         })
         .catch(err => res.status(500).end("something broke"));
 }
@@ -21,7 +22,7 @@ function detail(req, res, next) {
         .get(API_BASE_URL + "/api/" + thingId)
         .then(response => {
             console.log("data", response.data);
-            res.render("thing", response.data);
+            res.render("thing", { thing: response.data });
         })
         .catch(err => res.status(500).end("something broke"));
 }
