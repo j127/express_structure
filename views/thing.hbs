@@ -1,8 +1,9 @@
-<h1><span class="color" style="color: {{thing.color}}">{{thing.color}}</span> {{thing.product}}</h1>
+<h1>{{thing.product}}</h1>
 <code>this is a "thing" template</code>
 <h3>Description</h3>
 <p>{{thing.description}}</p>
-<h3>Product ID #{{thing.id}}</h3>
-<h3>${{thing.price}}</h3>
+<h3>Product ID: {{thing.id}}</h3>
+<h3>Color: <span class="color" style="color: {{thing.color}}">{{thing.color}}</span></h3>
+<h3>Price: ${{thing.price}}</h3>
 <img src="{{thing.picture}}" alt="{{thing.product}}">
 
