@@ -1,5 +1,7 @@
 # Express Structure Example
 
+To run this app:
+
 ```text
 $ npm install
 $ npm start
